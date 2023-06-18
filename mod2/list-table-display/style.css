@@ -1,0 +1,63 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+
+:root{ 
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #d2c445;
+    font-size: 3.6rem; 
+    font-weight: 900px;
+    text-transform: capitalize; 
+    text-align: center; 
+}
+
+
+
+.img{
+    height: 100vh; 
+    width: 100%;
+    background-color: #555;
+    background-image: url('https://images.unsplash.com/photo-1661956602153-23384936a1d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=1000&q=60');
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+} */
+
+
+table, td, th{
+    border: 1px solid black;
+}
+
+table thead{
+    background-color: steelblue;
+    color: white;
+}
+
+table{
+    font-size: 2.4rem;
+    border-collapse: separate;
+}
+
+table tr:nth-child(2n + 2){  
+    background-color: #a09b9b;
+}
+
+ul, ol {
+    padding-left: 2.4rem;
+} 
+
+ul{
+    list-style: square;
+}
+
+ol{
+    list-style: upper-roman; /* numeros romanos */
+}

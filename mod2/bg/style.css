@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*permite que as medidas da box não mude*/
+}
+
+/*pseudo classe*/
+:root{ 
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #d2c445;
+    font-size: 6.6rem; /* rem respeita as preferencias do usuario */ 
+    font-weight: 900;
+    font-style: oblique;
+    text-decoration: underline;
+    text-transform: capitalize; /* letra maiusculas...*/
+    text-align: center; 
+}
+
+h1, h2, h3, h4, h5, h5{
+    font-family: 'Poppins', sans-serif, 'Arial';
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+.novo-em{
+    font-size: 300%;
+}
+
+.novo-em h2{
+    font-size: 3.2em; /* rem respeita o root, em não respeita */
+}
+
+p{
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a{
+    font-size: 2.4rem;
+    color: #555;
+}
+
+a:visited{
+    color:#d2c445;
+}
+
+a:hover{
+    color: blue;
+}
+
+.img{
+    height: 80vh; 
+    width: 100%;
+    background-color: #555;
+    background-image: url('https://images.unsplash.com/photo-1661956602153-23384936a1d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=1000&q=60');
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /*fixa a imagem e scroll vai sobrepor*/
+}
+
+.box{
+    height: 100px;
+    width: 200px;
+    border: 4px solid #555;
+    display: inline-block; /* se couber um elemento ao lado ele irá colocar - elementos inline e inline block*/
+    padding: 5px;/*efeito dentro*/
+    margin: 15px; /*efeito fora*/
+    background-color: #d2c445;
+    color: white;
+    /* display: block; não permite elementos ao lado  */
+    /* display: inline; não respeita dimensões */
+    border-radius: 2rem;
+
+}
