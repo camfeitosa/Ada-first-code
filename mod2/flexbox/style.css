@@ -1,12 +1,61 @@
-.box{
-    height: 100px;
-    width: 200px;
-    border: 4px solid #555;
-    display: inline-block;
-    padding: 5px;/*efeito dentro*/
-    margin: 15px; /*efeito fora*/
-    background-color: #d2c445;
-    color: white;
-    border-radius: 2rem;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'arial';
+    font-size: 1.8rem;
+}
+
+/* main{
+
+} */
+
+h1{
+    color: #d2c445;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4.6rem;
+}
+
+h1, h2,  h3, h4, h5, h6{
+    font-family: 'Roboto', arila, cursiva;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+p{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.boxes{
+    /* height: calc(100vh - 14rem); */
+    position: relative;
+     
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+
+.box{
+    min-height: 10rem;
+    min-width: 20rem;
+    padding: 1.5rem;
+    border: 10px solid #27b87c;
+    display: inline-block;
+    background-color: #9870da;
+    color: white;
+    font-size: 4rem;
+} 

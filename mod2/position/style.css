@@ -1,0 +1,40 @@
+*{
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    
+}
+
+.boxes{
+    position: relative;
+    background-color: #555;
+
+}
+
+.box{
+    height: 100px;
+    width: 200px;
+    border: 4px solid #555;
+    display: inline-block; 
+    padding: 5px;/*efeito dentro*/
+    margin: 15px; /*efeito fora*/
+    background-color: #d2c445;
+    color: white;
+    border-radius: 0.4rem;
+    position: static;
+}
+
+.box:nth-child(1){
+    position: absolute; /*caixa 1 com posição absoluta, sai do fluxo e fica livre em relação à div pai, caso não houver, em relação a página*/
+    top: 100px;
+}
+
+/* .box:nth-child(2){
+    display: ;
+} */
+
+nav.menu{
+    position: fixed;
+    background-color: #927ec9;
+    width: 100%;
+}
