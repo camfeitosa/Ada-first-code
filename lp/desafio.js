@@ -4,7 +4,7 @@
 // As vendas são divididas por ; (ponto e virgula)
 
 // Sendo: 
-// nome-do-produto1 até a / (barra) o nome do produto
+// nome-do-produto1 até a / (barra)     o nome do produto
 // valor33.5 o valor do produto até o = (igual)
 // cupom5 a porcentagem de desconto do produto após o = (igual)
 
