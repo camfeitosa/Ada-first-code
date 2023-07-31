@@ -12,12 +12,7 @@
 // Precisamos formatar essa string para obter uma lista de objetos com a seguinte estrutura: 
 
 const listaDaVenda = [
-    { 
-        produto: 'Nome do produto formatado', // Nome do produto formatado com a primeira letra maiúscula 
-        valor: 99, // Valor do produto
-        cupom: 4, // Valor de desconto do produto em porcentagem, nesse caso seria 4%
-        quantidade: 1, // A quantidade que esse produto aparece na string
-    }
+ b9
 ]
 
 // Extra: 
