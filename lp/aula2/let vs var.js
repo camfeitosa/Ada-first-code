@@ -18,3 +18,6 @@ console.log(valorImutavel)
     var prof = 'Mateus' //funciona
 }
 console.log(prof) //error -> a variável está dentro de um escopo
+
+console.clear() //limpa console
+console.error('[ERRO]')
