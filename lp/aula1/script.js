@@ -42,10 +42,13 @@ console.log(nome2.charAt(0)) //valor específico da variável
 // Falsy
 // 0, "", null, undefined, [], NaN, false
 
-console.log(!!0)
+// TODOS FALSY
+console.log(!!0) // !! retorna booleano
 console.log(!!null)
 console.log(!!undefined)
 console.log(!![].length)
 console.log(!!NaN)
 console.log(!!false)
+
+console.log(!!1) // true
 
