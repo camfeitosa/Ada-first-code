@@ -5,10 +5,12 @@
 
 // condição ? verdadeiro : falso
 
-//RIVISAR = TERNÁRIO
+//RIVISAR = TERNÁRIO (if else rápido)
+
+2 > 6 ? console.log("Sim") : console.log("Não")
 
 var ehMaiorDe16 = false
-var podeEntrar =  ehMaiorDe16 ? 'Pode entrar' =D  : 'Não pode entrar =D'
+var podeEntrar =  ehMaiorDe16 ? 'Pode entrar'  : 'Não pode entrar =D'
 
 console.log(podeEntrar)
 

@@ -1,9 +1,10 @@
-// // funções/métodos de array
-// // forEach 
-// // map 
-// // filter
-// // reduce
-// // concat
+// funções/métodos de array
+
+// forEach 
+// map 
+// filter
+// reduce
+// concat
 
 
 // const contatos = [
@@ -29,3 +30,4 @@ function tabuadaDe2(item) {
 }
 
 numeros.forEach(tabuadaDe2)
+
