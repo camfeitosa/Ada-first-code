@@ -12,4 +12,4 @@ const aluno = {
 }
 
 console.clear()
-console.table(aluno) // mostra objeto em forma de tabela
+console.table(aluno) // mostra objeto em forma de tabela 

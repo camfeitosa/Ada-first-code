@@ -5,6 +5,8 @@
 
 // condição ? verdadeiro : falso
 
+//RIVISAR = TERNÁRIO
+
 var ehMaiorDe16 = false
 var podeEntrar =  ehMaiorDe16 ? 'Pode entrar' =D  : 'Não pode entrar =D'
 
