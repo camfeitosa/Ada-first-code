@@ -40,27 +40,3 @@ console.log(multiplicar(2))
 
 const add = (numero) => numero + 3
 console.log(add(2)) //5 = passou o parametro 2
-
-
-const aluno = {
-    nome: 'Mateus',
-    turma: 1033,
-    notas: [
-        { materia: 'Lógica', nota: 8 },
-        { materia: 'Redes', nota: 1 },
-        { materia: 'Finanças', nota: 10 },
-    ],
-    calculaMedia: function() {
-        console.log('Calcula ai')
-        const media = this.notas.reduce((acc, current) => {
-            return acc + current.nota
-        }, 0)
-
-        const total = media / this.notas.length 
-
-        return media
-    } //pair programming
-}
-
-console.log(aluno.nome)
-console.log(aluno.calculaMedia())

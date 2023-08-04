@@ -3,6 +3,7 @@
 // Testes lógicos com 2 ou mais desvios
 
 const idade = 16
+
 const ehMaior = (idade >= 18) ? 'Verdadeira' : 'Falsa'
 
 const ternarioAninhado = (idade >= 18) ? 'Verdadeira' : (idade === 16) ? 'Opa 16' : 'Outra'
