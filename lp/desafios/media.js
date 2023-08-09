@@ -11,7 +11,7 @@
 // 3 estrelas  | 18
 // 4 estrelas  | 25
 // 5 estrelas  | 40
- 
+
 // - Após o fechamento do expediente, o gerente decidiu calcular a nota média das avaliações naquele dia; retorne o valor da nota média considerando o valor fixo de 100 clientes.
 
 const avaliacoes = {
@@ -23,8 +23,7 @@ const avaliacoes = {
   }
   
   const totalAvaliacoes = Object.values(avaliacoes).reduce((total, atual) => total += atual, 0)
-  
-  // Solução com for
+
   let media = 0
   for (const i in avaliacoes) {
     media += (avaliacoes[i] * i) / totalAvaliacoes

@@ -11,6 +11,5 @@ const parceiros = listaParceiros.reduce((acumulador, item) => {
   PJ: []
 })
 
-
 console.table(parceiros.PF, ['pessoaFisica', 'parceirosId', 'nome'])
 console.table(parceiros.PJ, ['pessoaJuridica', 'parceirosId', 'nome'])
