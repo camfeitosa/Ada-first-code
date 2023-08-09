@@ -11,5 +11,24 @@ const parceiros = listaParceiros.reduce((acumulador, item) => {
   PJ: []
 })
 
-console.table(parceiros.PF, ['pessoaFisica', 'parceirosId', 'nome'])
-console.table(parceiros.PJ, ['pessoaJuridica', 'parceirosId', 'nome'])
+console.log(parceiros.PF, ['pessoaFisica', 'parceirosId', 'nome'])
+console.log(parceiros.PJ, ['pessoaJuridica', 'parceirosId', 'nome'])
+
+
+// correção
+// const valorInicial = {
+//     PF: [],
+//     PJ: [],
+// }
+
+// // CPF === 11 dígitos
+// const agrupar = (agrupados, parceiro) => {
+//     const tipoParceiro = parceiro.parceirosId.length === 11 ? 'PF' : 'PJ'
+
+//     agrupados[tipoParceiro].push(parceiro)
+//     return agrupados
+// }
+
+// const parceirosAgrupados = listaParceiros.reduce(agrupar, valorInicial)
+
+// console.log(parceirosAgrupados)
