@@ -50,7 +50,6 @@ A escola Lógica Sempre precisa de um módulo em seu sistema para gerenciar seus
 - O projeto deverá ser executado no console do navegador
 
 
-
 ## Funcionalidade extra*
 
 Como opcional adicionar a funcionalidade de classificação nos alunos, onde será possível **cadastrar** os alunos com a seguinte classificação: A, B, C ou D. Isso implicará na forma como adicionamos novos alunos seguindo a regra:
