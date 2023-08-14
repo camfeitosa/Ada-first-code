@@ -1,5 +1,6 @@
-// Cadastrar turma contendo
+// DESAFIO FINAL
 
+// Cadastrar turma contendo
 // código, number entre 1 e 10 (no máximo 10 turmas)
 // máximo, number máximo de alunos de 5 a 10
 
@@ -103,6 +104,28 @@ console.log('SAÍDA', turmas)
 //cadastrarTurma({codigo: 7, maximoDeAlunos: 10})
 
 
+// Cadastrar aluno contendo:
+// 	- nome,
+// 	- sobrenome, 
+// 	- email, 
+// 	- turma, *number* (sendo um código de turma válido)
+// 	- nascimento, sendo a data de nascimento do aluno
+// 	- notas, sendo um array de números, de no máximo 5 posições
+// 	- ativo, *boolean* // padrão true
+
+// Idade do aluno
+function calcularIdade(dataNascimento) {
+    const hoje = new Date();
+    const dataNasc = new Date(dataNascimento);
+    const idade = hoje.getFullYear() - dataNasc.getFullYear();
+
+    if (hoje.getMonth() < dataNasc.getMonth() || (hoje.getMonth() === dataNasc.getMonth() && hoje.getDate() < dataNasc.getDate())) {
+        return idade - 1;
+    }
+
+    return idade;
+}
+
 // Cadastrar aluno em uma turma existente
 function cadastrarAluno(nome, sobrenome, email, codigoTurma, nascimento, notas) {
     // Verifica se a turma existe
@@ -119,7 +142,19 @@ function cadastrarAluno(nome, sobrenome, email, codigoTurma, nascimento, notas) 
        return;
    }
 
-    // Cria o objeto aluno
+   // Verifica se o aluno é menor de 16 anos 
+   const idadeAluno = calcularIdade(nascimento);
+    if (idadeAluno < 16) {
+        console.log("Erro: O aluno é menor de 16 anos e não pode ser cadastrado.");
+        return;
+    }
+
+     // Verifica o número de notas e limita a um máximo de 5 notas
+     if (notas.length > 5) {
+        console.log("Erro: O número de notas excede o limite de 5.");
+        return;
+    }
+    
     const aluno = {
         nome,
         sobrenome,
@@ -160,9 +195,7 @@ function buscarAluno(email) {
 }
 
 
-
-cadastrarAluno("Camila", "Feitosa", "camfeitosa@gmail.com", 1, "05/07/2006", [7, 8, 6]); //Aluna com turma existente
-
+cadastrarAluno("Camila", "Feitosa", "camfeitosa@gmail.com", 1, "05/07/2006", [7, 8, 6, 7]); //Aluna com turma existente
 
 cadastrarAluno("Murilo", "Simões", "murisinner@gmail.com", 4, "21/12/2004", [9, 8, 7]); //Aluno com turma existente
 
@@ -172,6 +205,9 @@ cadastrarAluno("Rafa", "Silva", "rafaa@gmail.com", 10, "22/12/2005", [9, 8, 7]);
 
 cadastrarAluno("Camila", "Feitosa", "camfeitosa@gmail.com", 1, "05/07/2006", [7, 8, 6]); //Aluna repetida
 
+cadastrarAluno("Lais", "Matos", "lala@gmail.com", 5, "11/07/2006", [7, 8, 6, 10, 6, 8]); //Mais de 5 notas
+
+cadastrarAluno("Paulo", "Santos", "santinhos@gmail.com", 3, "11/07/2016", [7, 8, 6, 10]); //Menor de 16 anos
 
 
 console.log('Alunos cadastrados: ', alunos);
