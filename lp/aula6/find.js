@@ -13,7 +13,6 @@ const parceiroFind = parceiros.find(parceiro => {
 
 console.log(parceiroFind) 
 
-
 const numeros = [1,3,4]
 // console.log(numeros)
 
