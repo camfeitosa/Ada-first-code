@@ -1,0 +1,28 @@
+input:not([type="radio"]):not([type="checkbox"]){ /* inputs são inline */
+    width: 100%;
+}
+
+/* input[type="radio"] {
+    width: initial;
+} */
+
+fieldset {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
