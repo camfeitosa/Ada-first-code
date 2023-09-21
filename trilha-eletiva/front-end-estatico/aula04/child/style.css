@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center; /* ol considerado texto */ 
+}
+
+li{
+    background: rgb(71, 1, 150);
+    color: white;
+    display: inline-block;
+    padding: 5px; /* aréa clicavem 8 px*/
+    height: 32px;
+    width: 80px;
+    border-radius: 4px; /* maneiras de arredondar um canto 8px 5%*/
+    text-align: center;
+    margin: 4px;
+    box-sizing: border-box;
+    font-size: 12px;
+    border: 1px solid transparent;
+}    
+
+li:hover{
+    cursor: pointer;
+    background: #2b2b2b;
+    border-color: azure;
+}
+
+header > h1{ /* só os h1 dentro de header*/ 
+    text-align: center;
+}
+
+/* nav > ol > li:nth-child(1){
+    background-color: gray;
+} */
+
+nav > ol > li:nth-of-type(1){
+    background-color: rgba(128, 128, 128, 0.766);
+    border-color: transparent;
+}
+    
+img{
+    max-width: 100%;
+    width: 50%;
+    border: 1px solid;
+}
+
+section{
+    column-count: 4;
+    column-gap: 5;
+    margin: 10px;
+    column-rule: 2px #2ad;
+}

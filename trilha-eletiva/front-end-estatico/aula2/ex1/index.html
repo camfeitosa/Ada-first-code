@@ -8,99 +8,96 @@
 </head>
 <body>
     <main>
-        <h1>Form</h1>
-        <hr>
-        <br>
-
-        <form action="https://www.w3schools.com/action_page.php?" method="get">
+        <div class="container">
+        <form class="box" action="https://www.w3schools.com/action_page.php?" method="get">
             <!-- label = oq seria o campo de input -->
+            <h1>Configurações e Avaliação</h1>
             <fieldset>
-                <legend>Dados</legend>
-            <div>
-                <label for="texto">Input de texto: </label>
-                <input type="text" id="texto" placeholder="escreva aqui..." value="Camila"> <!-- value: valor inicial-->
-            </div>
+                    <legend>Dados Pessoais</legend>
 
-            <div>
-                <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome"> <!-- name: a a forma de identificar o campo com js, php... -->
-            </div>
-            
-            <div>
-                <label for="senha">Senha: </label>
-                <input type="password" id="senha" name="senha"> <!-- name: a a forma de identificar o campo com js, php... -->
-            </div>
-            
-            <div>
-                <label for="email">email: </label>
-                <input type="email" id="email" name="email"> <!-- name: a a forma de identificar o campo com js, php... -->
-            </div>
+                <div>
+                    <label for="nome">Username: </label>
+                    <input type="text" id="nome" name="nome" value="@" required> 
+                </div>
+                
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" id="senha" name="senha" required> 
+                </div>
+                
+                <div>
+                    <label for="email">email: </label>
+                    <input type="email" id="email" name="email" required> 
+                </div>
+                
+                <div>
+                    <label for="tel">Telefone: </label>
+                    <input type="number" name="tel"> 
+                </div>
 
             </fieldset>
-            
+
+            <fieldset>
+                <legend>Dados do cadastro</legend>
             <div>
                 <label for="data">Data: </label>
-                <input type="date" name="data"> <!-- name: a a forma de identificar o campo com js, php... -->
-            </div>
+                <input type="date" name="data"> 
             
             <div>
                 <label for="hora">Hora: </label>
-                <input type="time" name="hora"> <!-- name: a a forma de identificar o campo com js, php... -->
+                <input type="time" name="hora"> 
             </div>
 
-            <div>
-                <label for="num">Número: </label>
-                <input type="number" name="num"> <!-- name: a a forma de identificar o campo com js, php... -->
-            </div>
+            </fieldset>
 
+            <fieldset>
+                <legend>Perfil</legend>
+                <div>
+                    <label for="input">Foto de perfil: </label>
+                    <input type="file" id="input" name="input"> 
+                </div>
+                
+                <div>
+                    <label for="input">Cor de fundo: </label>
+                    <input type="color" id="input" name="input"> 
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Avaliação</legend>
             <div>
-                <label for="input">Input: </label>
-                <input type="file" id="input" name="input"> <!-- name: a a forma de identificar o campo com js, php... -->
+                <label for="input">Avalie a plataforma: </label>
+                <input type="range" id="input" name="input" value="0" max="100" min="0"> <!--  -->
             </div>
             
+            </fieldset>
             <div>
-                <label for="input">Input: </label>
-                <input type="url" id="input" name="input"> <!-- name: a a forma de identificar o campo com js, php... -->
-            </div>
             
-            <div>
-                <label for="input">Cor: </label>
-                <input type="color" id="input" name="input"> <!-- name: a a forma de identificar o campo com js, php... -->
-            </div>
-            
-            <div>
-                <label for="input">Avalie: </label>
-                <input type="range" id="input" name="input" value="50" max="" min=""> <!--  -->
-            </div>
-            
-            <div>
-                <label for="input">Avalie: </label>
-                <input type="checkbox" id="input" name="input"> <!--  -->
-            </div>
-            
-            <div>
-                <label for="input">Avalie: </label>
-                <input type="radio" id="input" name="input"> <!--  marca só uma -->
-            </div>
-            
+            <fieldset>
+                <legend>Deixe um comentário</legend>   
+            <textarea name="bio" id="bio" cols="50" rows="10"></textarea>
+            <!-- qnts linhas e colunas no quadro -->
+                <br>
+                <select name="select" id="select">
+                    <option value="" disabled selected>Qualidade dos Serviços</option> <!--desabilitar e começar selecionada-->
+                    <option value="1">Ótimo</option>
+                    <option value="2">Bom</option>
+                    <option value="3">Ruim</option>
+                    <option value="4">Péssimo</option>
+                </select>
+                <!-- oq será enviado pelo formulário -->
+            </fieldset>
+
             <div>
                 <label for="input">Limpar: </label>
                 <input type="reset" id="input" name="input" value="apaga tudo"> <!-- limpar o form -->
-            </div>
+            </div> <br>
 
-            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
-            <!-- qnts linhas e colunas no quadro -->
-
-            <select name="select" id="select">
-                <option value="" disabled selected>Nomes</option> <!--desabilitar e começar selecionada-->
-                <option value="nome2">Murilo</option>
-                <option value="nome3">Camila</option>
-            </select>
-            <!-- oq será enviado pelo formulário -->
             <div>
                 <input type="submit" id="input" name="input" value="enviar"> <!-- limpar o form -->
             </div>
         </form>
+    </div>
     </main>
 </body>
 </html>

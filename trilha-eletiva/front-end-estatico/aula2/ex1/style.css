@@ -1,4 +1,14 @@
-input:not([type="radio"]):not([type="checkbox"]){ /* inputs são inline */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin-top: 50px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="color"]){ /* inputs são inline */
     width: 50%;
 }
 
@@ -6,8 +16,9 @@ fieldset {
     margin-bottom: 10px;
 }
 
-.container{
-    width: 10px;
-    height: 60px;
-    background-color: yellow;
-}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
