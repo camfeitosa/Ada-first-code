@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    /* height: 100vh; */
+}
+
+/* Fixed, absolute, relative, styck */
+/*  */
+
+.box1{
+    position: relative;
+    top: 10px;
+    left:10px;
+    background-color: aquamarine;
+    width: 400px;
+    height: 400px;
+    margin-top: 200px;
+}
+
+.box2{
+    /* position: static; position natural de todos os elementos */
+    position: absolute; /* se baseia na div pai, diferente de estática = div relativa ou absolute, caso contrário, usa o body */
+    top: 20px;
+    left: 20px;
+    background-color: blueviolet;
+    width: 250px;
+    height: 250px;
+}

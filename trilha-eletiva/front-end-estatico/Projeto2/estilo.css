@@ -20,22 +20,10 @@ a:hover{
     color: #f2f0f0;
 }
 
-ol{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center; /* ol considerado texto */ 
-}
-
 li{
-    display: inline;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    margin: 4px;
-    box-sizing: border-box;
-    font-size: 12px;
-    border: 1px solid transparent;
+    display: inline-block;
+    margin-top: 40px;
+  
 } 
 
 .icon{
@@ -44,16 +32,12 @@ li{
     /* display: inline-block; */
 }
 
-/* .names{
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    background-color: #2b2b2b;
+ol{
+    margin: 0;
+    padding: 0;
+    text-align: center; /* ol considerado texto */ 
+}
 
-} */
-
-li{
-    columns: 2;
-    column-gap: 2;
-
+.list{
+    text-align: left;
 }
